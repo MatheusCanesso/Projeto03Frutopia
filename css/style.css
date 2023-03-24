@@ -1,0 +1,203 @@
+/* Reset CSS */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    font-family: 'Dosis', sans-serif;
+    font-weight: normal;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+/* Corpo todo da pagina */
+.hero{
+    width: 80%;
+    margin: auto;
+}
+
+/* Barra de navegação com logo e botões do topo */
+
+.navbar{
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+}
+
+ul{
+    flex: 1;
+    text-align: right;
+}
+
+ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 25px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #FA8989;
+    padding: 0 10px;
+    position: relative;
+}
+
+ul li a::after{
+    content: '';
+    width: 0%;
+    height: 10px;
+    background: #f14a60;
+    border-radius: 5px 5px 0px 0px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -15px;
+    transition: 0.5s ease;
+}
+
+ul li a:hover::after{
+    width: 100%;
+}
+
+/* Icones de navegação */
+.navbar-icons i{
+    height: 25px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.navbar-icons i:hover{
+    color: #fa8989;
+    transition: 0.3s ease;
+}
+
+.navbar-icons{
+    margin-left: 40px;
+}
+
+/* Div da imagem dos Morangos */
+.banner{
+    display: flex;
+    margin-top: 80px;
+}
+
+.left-column,.right-column{
+    flex-basis: 50%;
+}
+
+/* Imagem dos morangos */
+.right-column img{
+    width: 100%;
+}
+
+/* Caixa de pesquisa */
+.search-box{
+    width: 45%;
+    display: flex;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0px 30px;
+}
+
+
+.search-box i{
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.search-box i:hover{
+    color: #f14a60;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+.search-box input{
+    width: 100%;
+    margin-left: 5px;
+    font-size: 17px;
+    border: 0;
+    outline: none;
+}
+
+/* Texto de Morangos */
+.left-column h1{
+    font-size: 100px;
+}
+
+/* Subtitulo de Morangos */
+.left-column h3{
+    font-size: 35px;
+}
+
+span{
+    color: #f14a60;
+}
+
+/* Paragrafos abaixo do subtitulo de morangos */
+.left-column p{
+    font-size: 18px;
+    color: #525252;
+    margin: 50px 0;
+}
+
+/* Botoões */
+.btn button{
+    padding: 7px 30px;
+    margin-right: 15px;
+    outline: none;
+    border: 1px solid #fb7381;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #fb7381;
+    background: transparent;
+}
+
+/* .btn .primary-btn{
+    background: linear-gradient(#fb7381, #f14a60);
+    box-shadow: 0 2px 15px rgba(248, 38,103, 0.26);
+    color: #fff;
+} */
+
+.btn button:hover{
+    transition: 0.5s ease;
+    background: linear-gradient(#fb7381, #f14a60);
+    box-shadow: 0 2px 15px rgba(248, 38,103, 0.26);
+    color: #fff;
+}
+
+.btn{
+    margin-bottom: 50px;
+}
+
+/* Icones de redes sociais */
+.social-icons{
+    width: 200px;
+    text-align: center;
+    opacity: .4;
+    position: relative;
+    margin-left: 160px;
+}
+
+.social-icons i{
+    height: 20px;
+    margin: 0 14px;
+}
+
+.social-icons i:hover{
+    transition: 0.5s ease;
+    color: #db5461;
+    cursor: pointer;
+}
+
+.social-icons::after{
+    content: '';
+    width: 150px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    left: -160px;
+    top: 10px;
+}
